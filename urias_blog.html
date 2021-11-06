@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fundamentos2122.github.io/framework-css-EmanuelRico/css/framework.css">
+    <link rel="stylesheet" href="css/index_styles.css">
+    <title>ERSports</title>
+</head>
+<body>
+    <div class="modal" id="modal_test">
+        <div class="modal-content">
+            <div class="modal-header">
+               <h5>Inicia Sesión</h5>
+               <button class="btn light-btn" data-dismiss="#modal_test">X</button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Nombre de Usuario</label>
+                        <input type="text" name="username" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="conditions">
+                        <label for="conditions">Recordar usuario</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn success-btn">Crear cuenta</button>
+                <button class="btn primary-btn">Iniciar sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">ERSports</a>
+        <button class="navbar-toggle btn light-btn" data-type="button">-</button>
+
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="btn secondary-btn" data-toggle="modal" data-target="#modal_test">Inicia Sesión</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid container-xl" id="body-content">
+        <div class="row">
+            <div class="col-12 col-xl-2 sidebar">
+                <ul class="" style="padding: 0">
+                    <a href="futbol_blogs.html" class="btn primary-btn sidebar-btn">
+                        Futbol
+                    </a>
+                    <a href="basquet_blogs.html" class="btn primary-btn sidebar-btn">
+                        Basquetbol
+                    </a>
+                    <a href="beisbol_blogs.html" class="btn primary-btn sidebar-btn">
+                        Beisbol
+                    </a>
+                    <a href="fa_blogs.html" class="btn primary-btn sidebar-btn">
+                        Futbol Americano
+                    </a>
+                    <a href="f1_blogs.html" class="btn primary-btn sidebar-btn">
+                        F1
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="col principal-content">
+                <div class="post">
+                    <img src="imagenes/urias.jpg" class="carrousel-img" alt="imagen de julio urias"></img>
+                    <h1>Julio Urías alimenta el sueño del primer bicampeonato para Los Angeles Dodgers</h1>
+                    <h2>Julio Urías cargará con la responsabilidad de emparejar la serie y seguir creyendo en el bicampeonato.</h2>
+
+                    <p class="text-post">
+                        En lo que va de los playoffs en este 2021, el zurdo sinaloense ya tiene tres apariciones, sólo una de ellas como abridor, pero a pesar de su buena labor ante los San Francisco Giants, el último recuerdo que tiene y deberá borrar pronto de su mente es el juego que dejó escapar en el Truist Field cuando Dave Roberts le dio la responsabilidad en la octava entrada y no pudo colgar la argolla, lo que finalmente derivó en la victoria de la novena local.
+                        <br>
+                        Si el plan no cambia de última hora, como ya lo hizo en su momento el manager de los Dodgers, entonces será Julio Urías el responsable que la serie vuelva al menos a Atlanta y ahí vuelvan a dejar en el camino a los Braves, tal y como lo hicieron en 2020 pero en una sede neutral.
+                        <br>
+                        La novena californiana, a pesar de su vasta historia nunca han podido ganar el título de la Gran Carpa en años consecutivos y ahora, después de acabar con una sequía que se remontaba hasta 1988, buscarán ser el primer equipo de los Dodgers que obtiene el anillo en años seguidos.
+                        <br>
+                        El primer campeonato, bajo el mote de Brooklyn Dodgers, llegó en 1955 pero al año siguiente cayeron ante los New York Yankees. Volvieron a ceñirse la corona hasta 1959 y en 1963 repitieron la dósis.
+                        <br>
+                        Ya en la campaña de 1965 fueron el equipo más dominante del orbe, pero un año después fueron barridos por los Baltimore Orioles para perder de nueva cuenta el sueño del bicampeonato.
+                        <br>
+                        En la década de los 80's también presumieron un par de títulos (1981 y 1988) pero estuvieron lejos de siquiera aspirar a los títulos consecutivos. Posteriormente, de 1989 a 2016 se olvidaron de siquiera llegar a la Serie Mundial y ahora, bajo el mando de Dave Roberts, tienen tres viajes al Clásico de Otoño en los últimos cuatro años y lo único que está en su camino que sea el cuarto boleto en las últimas cinco campañas son los Braves, con la diferencia que ahora llegan como los campeones vigentes y con el sueño de abrir el estante de los trofeos en campañas seguidas, algo que nunca han hecho.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3 col-md-2">
+                <img src="imagenes/pub1.gif" class="publicity" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer >
+        <p>Hecho por: Emanuel Rico.</p>
+        <p>Información de contacto: <a href="emanuelrico8@gmail.com">
+        emanuelrico8@gmail.com</a>.</p>
+    </footer>
+
+    <script src="https://fundamentos2122.github.io/framework-css-EmanuelRico/js/framework.js"></script>
+</body>
+</html>
