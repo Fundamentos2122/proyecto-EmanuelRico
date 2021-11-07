@@ -134,6 +134,35 @@ footer{
     padding: 1em;
 }
 
+.comment-text{
+    padding: 0;
+    margin: auto 0;
+    list-style: bold;
+}
+
+.user-img{
+    width: 10%;
+    height: 10%;
+    padding: 0.5em;
+}
+
+.comments-section{
+    border-radius: 1em;
+    border-width: 0.2em;
+    padding:1em;
+}
+
+.comment{
+    display: flex;
+    border-width: 0.1em;
+    margin: 1em;
+}
+
+.textarea-comment{
+    border-radius: 1em; 
+    margin: 1em
+}
+
 @media (max-width: 1200px) {
     .sidebar{
         background-color: var(--secondary-color);
