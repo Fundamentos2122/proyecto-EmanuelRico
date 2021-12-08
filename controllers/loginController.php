@@ -8,7 +8,9 @@
     }
     catch(PDOException $e){
         error_log("Error de conexión - " . $e, 0);
-        //header("Location: http://localhost/practicaphp-EmanuelRico/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+        
+        header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+        
         exit();
     }
 
@@ -46,7 +48,9 @@
             }
             catch(PDOException $e){
                 error_log("Error en query - " . $e, 0);
-                //header("Location: http://localhost/practicaphp-EmanuelRico/views/error.php?error=ERROR DE INICIO DE SESIÓN");
+                
+                header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+
                 exit();
             }
         }

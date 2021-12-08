@@ -1,17 +1,20 @@
 <?php 
     include("../models/Comentario.php");
 
-    try{
-        $connection = DBConnection::getConnection();
-    }
-    catch(PDOException $e){
-        error_log("Error de conexión - " . $e, 0);
-        exit();
-    }
-
     if($_SERVER["REQUEST_METHOD"] == "GET"){
         //Leer
         if(array_key_exists("id", $_GET) && array_key_exists("usuario_id", $_GET)){
+
+            try{
+                $connection = DBConnection::getConnection();
+            }
+            catch(PDOException $e){
+                error_log("Error de conexión - " . $e, 0);
+
+                header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+                
+                exit();
+            }
             //Traer la información de un elemento
                 $post_id = $_GET["id"];
                 $usuario_id = $_GET["usuario_id"];
@@ -55,6 +58,16 @@
         }
     }
     else if($_SERVER["REQUEST_METHOD"] == "POST"){
+        include("../models/DB.php");
+
+        try{
+            $connection = DBConnection::getConnection();
+        }
+        catch(PDOException $e){
+            error_log("Error de conexión - " . $e, 0);
+            exit();
+        }
+
         if($_POST["_method"] == "POST"){
             //Guardar
             $texto = $_POST["comentario"];

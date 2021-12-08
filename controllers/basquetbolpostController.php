@@ -8,6 +8,9 @@
     }
     catch(PDOException $e){
         error_log("Error de conexión - " . $e, 0);
+
+        header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+        
         exit();
     }
 

@@ -86,6 +86,12 @@
                         </form>
                     </li>';
                 }
+                else if(array_key_exists("error", $_GET)){
+                    echo
+                    '<li class="nav-item">
+                        Error :(
+                    </li>';
+                }
                 else{
                     echo
                     '<li class="nav-item">

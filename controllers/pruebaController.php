@@ -8,6 +8,9 @@
     }
     catch(PDOException $e){
         error_log("Error de conexión - " . $e, 0);
+
+        header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+
         exit();
     }
 
@@ -39,6 +42,9 @@
             }
             catch(PDOException $e){
                 error_log("Error en query - " . $e, 0);
+
+                header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+                
                 exit();
             }
         }
@@ -90,6 +96,9 @@
             }
             catch(PDOException $e){
                 error_log("Error en query - " . $e, 0);
+
+                header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+
                 exit();
             }
         }
@@ -112,12 +121,15 @@
             }
             catch(PDOException $e){
                 error_log("Error en query - " . $e, 0);
+
+                header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
+
                 exit();
             }
         }
         else{
             //Error
-            echo "No se detectó ningún método";
+            header("Location: http://localhost/ermsports/views/error.php?error=ERROR DE CONEXIÓN A LA BASE DE DATOS");
         }
     }
 ?>

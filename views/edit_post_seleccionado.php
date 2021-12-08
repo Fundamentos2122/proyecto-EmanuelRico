@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(!array_key_exists("nombre_usuario", $_SESSION)){
+        header("Location: http://localhost/ermsports/views/");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +18,7 @@
     <title>ERSports</title>
 </head>
 <body class="container">
-
-    <?php include("modal_inicio_sesion.php"); session_start();?>
+    
     <?php include("navbar.php");?>
 
     <div class="container-fluid container-xl" id="body-content">
@@ -22,12 +30,12 @@
 
                 <div class="form-group">
                     <label for="titulo">Título del post</label>
-                    <input type="text" name="titulo" class="form-control edit-post" id="titulo">
+                    <input type="text" name="titulo" class="form-control" id="titulo">
                 </div>
 
                 <div class="form-group">
                     <label for="subtitulo">Subtítulo del post</label>
-                    <input type="text" name="subtitulo" class="form-control edit-post" id="subtitulo">
+                    <input type="text" name="subtitulo" class="form-control" id="subtitulo">
                 </div>
                 
                 <div class="form-group">
